@@ -11,7 +11,6 @@ public class Server
     public static void main(final String[] args)
     {
         final ResourceConfig config = new ResourceConfig(EndpointsController.class);
-        config.register(EndpointsController.class);
 
         GrizzlyHttpServerFactory.createHttpServer(URI.create("http://localhost:8080"), config);
     }
